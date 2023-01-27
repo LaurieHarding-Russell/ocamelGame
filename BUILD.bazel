@@ -1,0 +1,15 @@
+load(
+    "@rules_ocaml//build:rules.bzl",
+    "ocaml_binary",
+    "ocaml_module",
+)
+
+ocaml_binary(
+    name = "game",
+    deps = [":_game"],
+)
+
+ocaml_module(
+    name = "_game",
+    struct = "game.ml",
+)
