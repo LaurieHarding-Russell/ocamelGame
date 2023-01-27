@@ -6,6 +6,7 @@ load(
 
 ocaml_binary(
     name = "game",
+    main = ":_game",
     deps = [":_game"],
 )
 
